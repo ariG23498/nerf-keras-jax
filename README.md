@@ -1,20 +1,20 @@
-## NeRF in Keras JAX
+# Neural Radiance Fields in Keras with JAX backend
 
 In this repository, we present a minimal JAX implementation of the research paper
 [**NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis**](https://arxiv.org/abs/2003.08934)
-by Ben Mildenhall et. al. 
+by Ben Mildenhall et. al. using the Keras 3 API with JAX backend.
 
-![200-epoch-training](https://i.imgur.com/l3rG4HQ.gif)
+![loss-nerf-jax-resized](https://github.com/ariG23498/nerf-keras-jax/assets/36856589/ecb59a06-7ff4-4db0-ae04-eadafc6fb113)
 
 Here we do the following:
-- Port the existing NeRF Keras tutorial from Keras-2 to Keras-3 ✨
+- Port the [existing NeRF Keras tutorial](https://keras.io/examples/vision/nerf/) (in TensorFlow backend) from Keras-2 to Keras-3 ✨
 - Utilise JAX as a backend in place of TensorFlow
 - Achieve a **4X speed-up in training** compared to the TensorFlow implementation 
 - Completely stateless API design
 
 ## Usage
 
-To get started you can directly open the [GitHub GIST](https://colab.research.google.com/gist/ariG23498/ec096c43ef1436c6ab04d84c29826f6e/scratchpad.ipynb) notebook or get started with `train.py`.
+To get started you can directly open the [notebooks/nerf.ipynb](https://github.com/ariG23498/nerf-keras-jax/blob/master/notebooks/nerf.ipynb) notebook or get started with `train.py`.
 
 ## Additional Resources
 
@@ -31,5 +31,3 @@ If anyone is interested in going deeper into NeRF, we have built a 3-part blog s
 - [Manim Repository](https://github.com/3b1b/manim): We have used manim to build all the animations.
 - [Mathworks](https://www.mathworks.com/help/vision/ug/camera-calibration.html): Mathworks for the camera calibration article.
 - [Mathew's video](https://www.youtube.com/watch?v=dPWLybp4LL0): A great video on NeRF.
-
-Try the model on [Hugging Face Spaces](https://huggingface.co/spaces/keras-io/NeRF) 
