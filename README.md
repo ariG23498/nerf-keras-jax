@@ -14,7 +14,7 @@ Here we do the following:
 
 ## Usage
 
-To get started you can directly open the `nerf-keras-jax.ipynb` notebook or get started with `train.py`.
+To get started you can directly open the [GitHub GIST](https://colab.research.google.com/gist/ariG23498/ec096c43ef1436c6ab04d84c29826f6e/scratchpad.ipynb) notebook or get started with `train.py`.
 
 ## Additional Resources
 
