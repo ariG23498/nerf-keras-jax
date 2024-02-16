@@ -9,7 +9,7 @@ by Ben Mildenhall et. al.
 Here we do the following:
 - Port the existing NeRF Keras tutorial from Keras-2 to Keras-3 ✨
 - Utilise JAX as a backend in place of TensorFlow
-- Achieve a 4X speed-up in training 
+- Achieve a **4X speed-up in training** compared to the TensorFlow implementation 
 - Completely stateless API design
 
 ## Usage
