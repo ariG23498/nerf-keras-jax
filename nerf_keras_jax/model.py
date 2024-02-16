@@ -132,7 +132,9 @@ class NeRF(keras.Model):
         return [self.loss_tracker]
 
 
-def get_nerf_model(batch_size, height, width, num_samples, num_layers, num_pos, pos_encode_dims):
+def get_nerf_model(
+    batch_size, height, width, num_samples, num_layers, num_pos, pos_encode_dims
+):
     """Generates the NeRF neural network.
 
     Args:
@@ -150,4 +152,11 @@ def get_nerf_model(batch_size, height, width, num_samples, num_layers, num_pos, 
             # Inject residual connection.
             x = layers.concatenate([x, inputs], axis=-1)
     outputs = layers.Dense(units=4)(x)
-    return NeRF(inputs=inputs, outputs=outputs, batch_size, height, width, num_samples)
+    return NeRF(
+        inputs=inputs,
+        outputs=outputs,
+        batch_size=batch_size,
+        height=height,
+        width=width,
+        num_samples=num_samples,
+    )
