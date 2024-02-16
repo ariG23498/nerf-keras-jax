@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "nerf-keras-jax"
+version = "0.1.0"
+description = ""
+authors = ["Aritra Roy Gosthipaty <aritra.born2fly@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+keras = "^3.0.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
