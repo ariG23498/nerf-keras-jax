@@ -62,7 +62,13 @@ if __name__ == "__main__":
 
     num_pos = height * width * config.NUM_SAMPLES
     nerf_model = model.get_nerf_model(
-        num_layers=8, num_pos=num_pos, pos_encode_dims=config.POS_ENCODE_DIMS
+        batch_size=config.BATCH_SIZE,
+        height=height,
+        width=width,
+        num_samples=config.NUM_SAMPLES,
+        num_layers=8,
+        num_pos=num_pos,
+        pos_encode_dims=config.POS_ENCODE_DIMS,
     )
     nerf_model.compile(
         optimizer=keras.optimizers.Adam(), loss_fn=keras.losses.MeanSquaredError()
