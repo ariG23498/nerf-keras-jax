@@ -6,7 +6,7 @@ by Ben Mildenhall et. al.
 
 ![200-epoch-training](https://i.imgur.com/l3rG4HQ.gif)
 
-In this repository we do the following:
+Here we do the following:
 - Port the existing NeRF Keras tutorial from Keras-2 to Keras-3 ✨
 - Utilise JAX as a backend in place of TensorFlow
 - Achieve a 4X speed-up in training 
