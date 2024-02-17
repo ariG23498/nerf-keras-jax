@@ -1,5 +1,7 @@
 # Neural Radiance Fields in Keras with JAX backend
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ariG23498/nerf-keras-jax/blob/master/notebooks/nerf.ipynb)
+
 In this repository, we present a minimal JAX implementation of the research paper
 [**NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis**](https://arxiv.org/abs/2003.08934)
 by Ben Mildenhall et. al. using the Keras 3 API with JAX backend.
